@@ -1,0 +1,262 @@
+/* reset ========================================= */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+/* base ========================================= */
+
+body {
+  color: $color_black;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a,
+a:link {
+  color: #444;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $color_black;
+}
+
+a:hover {
+  color: #c57800;
+}
+
+.indent {
+  display: inline-block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.text_red {
+  color: #d20000;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.tl {
+  text-align: left !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+@for $i from 10 through 20 {
+  .fs#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mt#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+  }
+  
+  .mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+  }
+  
+  .ml#{$i * 5} {
+    margin-left: #{$i * 5}px !important;
+  }
+  
+  .mr#{$i * 5} {
+    margin-right: #{$i * 5}px !important;
+  }
+  
+  .pt#{$i * 5} {
+    padding-top: #{$i * 5}px !important;
+  }
+  
+  .pb#{$i * 5} {
+    padding-bottom: #{$i * 5}px !important;
+  }
+  
+  .pl#{$i * 5} {
+    padding-left: #{$i * 5}px !important;
+  }
+  
+  .pr#{$i * 5} {
+    padding-right: #{$i * 5}px !important;
+  }
+}
+
+
+/* common ========================================= */
+
+body {
+  background-color: $color_green;
+}
+
+header,
+footer,
+section,
+.inner {
+  padding: 20px $sp_contents_padding;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #2fcdb4;
+  color: #fff;
+  padding: $sp_contents_padding;
+}
+
+main {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.inner {
+  max-width: 1050px;
+  padding: 0 $sp_contents_padding;
+}
+
+/* header ========================================= */
+
+#header {
+  background-color: $color_green;
+  text-align: center;
+  padding: 8px $sp_contents_padding 10px;
+
+  .header__title {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* footer ========================================= */
+
+#footer {
+  position: relative;
+  text-align: center;
+  
+  .btn_backtotop {
+    position: absolute;
+    top: -39px;
+    left: $sp_contents_padding;
+    
+    a {
+      background-color: $color_green;
+      border-radius: 10px 10px 0 0;
+      color: #fff;
+      max-height: 40px;
+      padding: 15px;
+      text-decoration: none;
+    }
+  }
+}
+
+/* styles ========================================= */
+
+
+

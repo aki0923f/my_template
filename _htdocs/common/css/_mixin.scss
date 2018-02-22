@@ -1,0 +1,37 @@
+// font-size
+@mixin fs($size:16){
+  font-size: ($size / 16 * 100) + %;
+}
+@mixin fs_sp($size:14){
+  font-size: ($size / 14 * 100) + %;
+}
+
+// media query
+@mixin max-screen($break-point:767px) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+@mixin min-screen($break-point:768px) {
+  @media screen and (min-width: $break-point), print {
+    @content;
+  }
+}
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+// SP 幅指定計算
+@mixin width-sp($width) {
+  width: #{$width / 750 * 100%};
+}
+
+// clearfix
+@mixin clearfix {
+  &::after {
+    content:" ";
+    display:block;
+    clear:both;
+  }
+}

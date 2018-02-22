@@ -1,0 +1,70 @@
+/* list ========================================= */
+.list {
+  &__heading {
+    margin-bottom: 20px;
+    
+    &::before {
+      content: "";
+      background-color: $color_blue;
+      border-right: 1px solid #195f65;
+      border-bottom: 1px solid #195f65;
+      display: inline-block;
+      margin-right: 8px;
+      width: 10px;
+      height: 10px;
+      vertical-align: middle;
+    }
+  }
+  
+  li {
+    margin-bottom: 20px;
+  }
+  
+  li > a {
+    background-color: #e9f5f8;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.18s ease-out;
+    
+    &::after {
+      border-style: solid;
+      border-width: 0 6px 6px 6px;
+      border-color: transparent transparent $color_blue transparent;
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      right: 4px;
+      width: 0;
+      height: 0;
+      transform: rotate(135deg);
+    }
+    
+    &:hover {
+      color: $color_blue;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  dt {
+    font-size: 16px;
+    font-weight: bold;
+    
+    span {
+      font-size: 14px;
+      display: block;
+      font-weight: normal;
+    }
+  }
+  
+  dd {
+    font-size: 10px;
+    p {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+}
+

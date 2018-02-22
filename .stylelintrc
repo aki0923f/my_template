@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "string-quotes": ["double", { "message": "タブルクォーテーションで囲ってください。" }],
+    "color-hex-case": ["lower", { "message": "16進数の色は、小文字で指定してください。" }],
+    "color-hex-length": ["short", { "message": "16進数の色の表記は省略してください。" }],
+    "color-no-invalid-hex": [true, { "message": "色コードが間違っております" }],
+    "number-leading-zero": ["never", { "message": "1未満の値の場合、先頭の「0」を削除してください。" }],
+    "number-no-trailing-zeros": [true, { "message": "1未満の値の場合、末尾の「0」を削除してください。" }],
+    "declaration-colon-space-after": ["always", { "message": "「:」の後に空白を入れなければなりません。" }],
+    "function-comma-space-after": ["always", { "message": "「,」の後に空白を入れなければなりません。" }],
+    "function-comma-space-before": ["never", { "message": "「,」の前に空白を入れてはいけません。" }],
+    "value-list-comma-space-after": ["always", { "message": "「,」の後に空白を入れなければなりません。" }],
+    "property-case": ["lower", { "message": "プロパティは小文字で記述してください。" }],
+    "length-zero-no-unit": [true, { "message": "値が「0」の場合は単位を付けないでください。" }],
+    "block-no-empty": [true, { "message": "空のブロックは削除してください。" }],
+    "block-opening-brace-newline-after": ["always", { "message": "「{」の後は必ず改行してください。" }],
+    "block-closing-brace-newline-before": ["always", { "message": "「}」の前は必ず改行してください。" }],
+    "block-opening-brace-space-before": ["always", { "message": "「{」の前は必ずスペースを入れてください。" }],
+    "selector-combinator-space-after": ["always", { "message": "「+」や「>」の後に必ずスペースを入れてください。" }],
+    "selector-combinator-space-before": ["always", { "message": "「+」や「>」の前に必ずスペースを入れてください。" }],
+    "declaration-block-no-duplicate-properties": [true, { "message": "プロパティの重複があります。" }],
+    "declaration-block-trailing-semicolon": ["always", { "message": "ルールの後に必ず「;」が必要です。" }],
+    "indentation": [2, { "message": "インデントはスペース2つで入れてください。" }],
+    "selector-pseudo-element-colon-notation": ["double", { "message": "疑似要素の「:」は2つ書きましょう。" }]
+  }
+}

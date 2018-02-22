@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<% id = 'top'; %><%- include('./ejs/_head'); %>
+</head>
+
+<body id="<%- json[id]['id']; %>">
+  <div id="wrapper">
+    <header id="header">
+      <h1 class="header__title">Demo Site</h1>
+    </header>
+    <main id="main">
+      メインコンテンツ
+    </main>
+    <footer id="footer">
+      <p>&copy; 2018 XXXXX.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

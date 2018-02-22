@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@import "../common/css/_variables.scss"; // 変数定義
+@import "../common/css/_mixin.scss"; // 関数定義
+@import "../common/css/_common.scss";
+@import "./_style.scss";
